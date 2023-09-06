@@ -237,6 +237,7 @@ vendor.display.enable_rc_support=1
 vendor.display.use_layer_ext=0
 vendor.display.use_smooth_motion=1
 vendor.display.vds_allow_hwc=0
+ro.sf.force_hwc_brightness=1
 
 # displayfeature
 persist.vendor.dc_backlight.enable=false
@@ -291,12 +292,12 @@ ro.hardware.fp.fod.location=low
 ro.hardware.fp.fod=true
 
 # Fling
-ro.min.fling_velocity=160 
+ro.min.fling_velocity=160
 ro.max.fling_velocity=20000
-ro.max.fling_velocity=20000 
-ro.vendor.qti.cgroup_follow.enable=true 
-persist.vendor.qti.inputopts.enable=true 
-persist.vendor.qti.inputopts.movetouchslop=0.6 
+ro.max.fling_velocity=20000
+ro.vendor.qti.cgroup_follow.enable=true
+persist.vendor.qti.inputopts.enable=true
+persist.vendor.qti.inputopts.movetouchslop=0.6
 ro.qcom.adreno.qgl.ShaderStorageImageExtendedFormats=0
 
 # FM

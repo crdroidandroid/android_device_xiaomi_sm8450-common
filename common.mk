@@ -564,3 +564,7 @@ endif
 PRODUCT_PACKAGES += \
     libnl \
     libwfdaac_vendor
+
+# Device-specific settings
+PRODUCT_PACKAGES += \
+    XiaomiParts

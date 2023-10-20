@@ -292,7 +292,9 @@ PRODUCT_COPY_FILES += \
 
 # JSON
 PRODUCT_PACKAGES += \
-    libjson
+    libjson \
+    libjsoncpp \
+    libjsoncpp_ndk
 
 # Keymaster
 PRODUCT_PACKAGES += \

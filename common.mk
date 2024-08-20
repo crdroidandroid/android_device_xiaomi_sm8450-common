@@ -108,6 +108,9 @@ PRODUCT_COPY_FILES += \
 # Automotive
 PRODUCT_PACKAGES += \
     android.hardware.automotive.vehicle@2.0-manager-lib:64
+    
+#Bcr
+$(call inherit-product, vendor/bcr/bcr.mk)
 
 # Bluetooth
 PRODUCT_PACKAGES += \

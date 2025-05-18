@@ -141,6 +141,9 @@ PRODUCT_COPY_FILES += \
 # Dolby
 $(call inherit-product, hardware/dolby/dolby.mk)
 
+# Dolby Vision
+$(call soong_config_set, dolby_vision, enabled, true)
+
 # DRM
 PRODUCT_PACKAGES += \
     android.hardware.drm-service.clearkey
@@ -245,6 +248,10 @@ $(call soong_config_set_bool,lineage_health,charging_control_supports_bypass,fal
 PRODUCT_PACKAGES += \
     init.qti.media.rc \
     init.qti.media.sh
+
+# Media - Dolby vision
+PRODUCT_PACKAGES += \
+    libcodec2_hidl_shim.vendor
 
 # Network
 PRODUCT_COPY_FILES += \

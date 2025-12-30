@@ -80,7 +80,7 @@ PRODUCT_PACKAGES += \
     libqcomvoiceprocessing \
     libvolumelistener
 
-$(call soong_config_set, android_hardware_audio, run_64bit, true)
+$(call soong_config_set_bool, android_hardware_audio, run_64bit, true)
 
 $(foreach sku, taro diwali cape ukee parrot, \
     $(eval PRODUCT_COPY_FILES += \
@@ -194,7 +194,7 @@ PRODUCT_PACKAGES += \
     gnss@2.0-base.policy \
     gnss@2.0-xtra-daemon.policy
 
-$(call soong_config_set, qtilocation, feature_nhz, false)
+$(call soong_config_set_bool, qtilocation, feature_nhz, false)
 
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.location.gps.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.location.gps.xml

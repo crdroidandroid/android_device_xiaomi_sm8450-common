@@ -230,6 +230,10 @@ ro.vendor.sensors.xiaomi.single_tap=true
 # SSR
 persist.vendor.ssr.restart_level=ALL_ENABLE
 
+# ScrollOptimizer
+persist.sys.perf.scroll_opt=true
+persist.sys.perf.scroll_opt.heavy_app=1
+
 # USB
 sys.usb.mtp.batchcancel=1
 vendor.usb.diag.func.name=ffs

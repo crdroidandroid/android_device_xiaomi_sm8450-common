@@ -94,12 +94,17 @@ blob_fixups: blob_fixups_user_type = {
         .replace_needed('libtinyxml2.so', 'libtinyxml2-v34.so'),
     'vendor/lib64/vendor.libdpmframework.so': blob_fixup()
         .add_needed('libhidlbase_shim.so'),
+<<<<<<< HEAD
         ('vendor/lib/c2.dolby.avc.dec.so', 'vendor/lib/c2.dolby.avc.sec.dec.so', 'vendor/lib/c2.dolby.hevc.dec.so', 'vendor/lib/c2.dolby.hevc.sec.dec.so'): blob_fixup()
         .add_needed('libstagefright_foundation-v33.so'),
         ('vendor/bin/hw/dolbycodec2'): blob_fixup()
         .add_needed('libstagefright_foundation-v33.so'),
         ('vendor/lib/c2.dolby.client.so'): blob_fixup()
         .add_needed('libcodec2_hidl_shim.so'),
+=======
+    'system_ext/lib64/libwfdcommonutils.so': blob_fixup()
+            .remove_needed('libheif.so')
+>>>>>>> 05ca50f (sm8450-common: remove libheif from libwfdcommonutils.so dependencies)
 }  # fmt: skip
 
 module = ExtractUtilsModule(

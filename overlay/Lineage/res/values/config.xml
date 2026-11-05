@@ -4,7 +4,7 @@
      SPDX-License-Identifier: Apache-2.0
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-<<<<<<< HEAD
+
     <!-- Defines the actions shown in advanced reboot submenu -->
     <string-array name="config_restartActionsList">
         <item>restart</item>
@@ -13,8 +13,6 @@
         <item>restart_bootloader</item>
     </string-array>
 
-=======
->>>>>>> 67a4717 (sm8450-common: fastbootd is now enabled by default)
     <!-- Whether device has a screen with a higher aspect ratio -->
     <bool name="config_haveHigherAspectRatioScreen">true</bool>
 </resources>
